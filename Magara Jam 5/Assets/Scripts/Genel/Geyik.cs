@@ -13,7 +13,7 @@ public class Geyik : MonoBehaviour,IEtkilesim
 
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     void Update()
