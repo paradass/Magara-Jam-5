@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Karakter : MonoBehaviour
 {
@@ -10,10 +11,16 @@ public class Karakter : MonoBehaviour
     public bool baltaVarmi;
     public float hareketHizi;
 
-    private bool hareket, vurma;
+    [System.NonSerialized] public bool vurma;
+    [System.NonSerialized] public int odunSayisi;
+    
+    private Text odunSayisiText;
+    private bool hareket;
     private int yon = 2;
     private float state,blend;
 
+    [SerializeField] private AudioSource yurumeSesi,baltaSesi;
+    [SerializeField] private AudioClip yurumeSesi1, yurumeSesi2;
     Animator animator;
 
     private void Awake()
@@ -23,6 +30,7 @@ public class Karakter : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        odunSayisiText = GameObject.Find("OdunSayisi").GetComponent<Text>();
     }
 
     void Update()
@@ -30,6 +38,7 @@ public class Karakter : MonoBehaviour
         Animasyon();
         Hareket();
         Etkilesim();
+        OdunSay();
     }
 
     void Animasyon()
@@ -101,7 +110,21 @@ public class Karakter : MonoBehaviour
             transform.position += new Vector3(0, hareketHizi * Time.deltaTime * -1, 0);
         }
 
-        if (!yatayHareket && !dikeyHareket) hareket = false;
+        if (yatayHareket || dikeyHareket)
+        {
+            if (!yurumeSesi.isPlaying)
+            {
+                int random = Random.Range(0, 2);
+                if (random == 0) yurumeSesi.clip = yurumeSesi1;
+                else yurumeSesi.clip = yurumeSesi2;
+                yurumeSesi.Play();
+            }
+        }
+        else
+        {
+            hareket = false;
+            yurumeSesi.Stop();
+        }
 
     }
 
@@ -111,10 +134,8 @@ public class Karakter : MonoBehaviour
         {
             vurma = true;
             RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, 2);
-            if (yon == 0) hit = Physics2D.Raycast(transform.position, Vector2.up, 2);
-            else if(yon == 1) hit = Physics2D.Raycast(transform.position, Vector2.right, 2);
-            else if(yon == 2) Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y-1), Vector2.up*-1, 2);
-            else hit = Physics2D.Raycast(transform.position, Vector2.right*-1, 2);
+            if (transform.localScale.x > 0) hit = Physics2D.Raycast(transform.position, Vector2.right, 1.2f);
+            else if(transform.localScale.x < 0) hit = Physics2D.Raycast(transform.position, Vector2.right*-1, 1.2f);
             if (baltaVarmi)
             {
                 Invoke("EtkilesimReset", 0.25f);
@@ -131,14 +152,22 @@ public class Karakter : MonoBehaviour
             {
                 if (baltaVarmi)
                 {
-                    //balta savurma sesi çal
+                    Invoke("BaltaSesi", 0.2f);
                 }
             }
         }
     }
-
+    void BaltaSesi()
+    {
+        baltaSesi.Play();
+    }
     void EtkilesimReset()
     {
         vurma = false;
+    }
+
+    void OdunSay()
+    {
+        odunSayisiText.text = odunSayisi.ToString();
     }
 }

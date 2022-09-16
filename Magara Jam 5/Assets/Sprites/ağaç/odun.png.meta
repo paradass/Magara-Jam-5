@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bdf2ecdbf7706a14182f98dbdef8bb41
+guid: 91035364409fa7f4c846191802580b7c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -131,85 +131,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sag balta savurma_0
+      name: odun_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 19
-        height: 16
+        width: 32
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66fa7c9f4e306d94b86cb5ff6d3f2f59
-      internalID: -29050013
+      spriteID: 54328808daecb59479edf8bfad832386
+      internalID: 1846415989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sag balta savurma_1
+      name: odun_1
       rect:
         serializedVersion: 2
-        x: 33
+        x: 48
         y: 0
-        width: 19
-        height: 16
+        width: 32
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c224f15ba65c8f4f8c88bd7a26555be
-      internalID: 1079491683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sag balta savurma_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 19
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27d8130301908ee49ae83cd800880498
-      internalID: -2071620097
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sag balta savurma_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 19
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 15483023473c9bc43ab2ac376a207fd5
-      internalID: 116078552
+      spriteID: b738b4735f01e414cba76426a38e65c4
+      internalID: 1436770396
       vertices: []
       indices: 
       edges: []
@@ -225,10 +183,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sag balta savurma_1: 1079491683
-      sag balta savurma_0: -29050013
-      sag balta savurma_3: 116078552
-      sag balta savurma_2: -2071620097
+      odun_0: 1846415989
+      odun_1: 1436770396
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

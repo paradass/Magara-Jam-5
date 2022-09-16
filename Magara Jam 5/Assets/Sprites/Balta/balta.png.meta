@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6c8d8c4ce0e9484408bdfbaec75c2d57
+guid: 6905ebb7101ea51438e5242c5adecb15
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -131,253 +131,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_0"
+      name: balta_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 0
-        width: 18
+        width: 10
         height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff5d4e33b3ed3a64e8fc922ea6dc8661
-      internalID: 1844577668
+      spriteID: 9f70f68aef1771c4c893c5026cbed5ac
+      internalID: 582660273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_1"
+      name: balta_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 19
         y: 0
-        width: 18
+        width: 10
         height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e0d7ace179bf434c9d743770ee39806
-      internalID: -1137571046
+      spriteID: 1c6fe4c712a24924c86c50645e462fe5
+      internalID: -74336043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_2"
+      name: balta_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 35
         y: 0
-        width: 18
+        width: 10
         height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13e0fddaab5d44545be13e6c9095106c
-      internalID: 595792095
+      spriteID: 689ab3ec7dc7956499dd062f54ca163d
+      internalID: 334600681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_3"
+      name: balta_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 51
         y: 0
-        width: 18
+        width: 10
         height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d418eed4d443df41b32074e747ff977
-      internalID: 790699856
+      spriteID: 42a42dc1d54674345a473fb46e1a9b72
+      internalID: 2080376438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_4"
+      name: balta_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 67
         y: 0
-        width: 18
+        width: 10
         height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ec23939f7c3dbf4590b15a9a7d3216d
-      internalID: 957491900
+      spriteID: e97a9f9db68be934886986695c1abd04
+      internalID: -409419064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_5"
+      name: balta_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 83
         y: 0
-        width: 18
+        width: 10
         height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 118aee3a2a6c6294ab7512bba078d0e6
-      internalID: 2107758783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_6"
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 18
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a9d1aae8e564d04ca7c830d21c3fd0e
-      internalID: -312440485
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_7"
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 18
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc0bcce0ed219164ea94aa1021d1e7bc
-      internalID: 1980525253
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_8"
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 19
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 521a61803fcfb4749af8e6d72c673d16
-      internalID: 804346789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_9"
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 0
-        width: 18
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ad6f3ab2985a8d4fb822d37c5a81579
-      internalID: -1534696927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_10"
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 18
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be9a55b65f9f6564ba49054a816ea7b2
-      internalID: 619365309
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_11"
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 0
-        width: 18
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b8d0f40e5de034419bea96eff97aa4c
-      internalID: -40725387
+      spriteID: 011640c22a7cca442947ef4ce911c165
+      internalID: -122748954
       vertices: []
       indices: 
       edges: []
@@ -393,18 +267,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_0": 1844577668
-      "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_10": 619365309
-      "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_3": 790699856
-      "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_2": 595792095
-      "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_11": -40725387
-      "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_4": 957491900
-      "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_9": -1534696927
-      "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_1": -1137571046
-      "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_6": -312440485
-      "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_8": 804346789
-      "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_7": 1980525253
-      "karakter baltal\u0131 sa\u011Fa y\xFCr\xFCme_5": 2107758783
+      balta_3: 2080376438
+      balta_2: 334600681
+      balta_1: -74336043
+      balta_4: -409419064
+      balta_0: 582660273
+      balta_5: -122748954
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
