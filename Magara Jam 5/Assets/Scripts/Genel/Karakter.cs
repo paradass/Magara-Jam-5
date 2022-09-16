@@ -134,8 +134,8 @@ public class Karakter : MonoBehaviour
         {
             vurma = true;
             RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, 2);
-            if (transform.localScale.x > 0) hit = Physics2D.Raycast(transform.position, Vector2.right, 1.2f);
-            else if(transform.localScale.x < 0) hit = Physics2D.Raycast(transform.position, Vector2.right*-1, 1.2f);
+            if (transform.localScale.x > 0) hit = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y-0.2f), Vector2.right, 1.2f);
+            else if(transform.localScale.x < 0) hit = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - 0.2f), Vector2.right*-1, 1.2f);
             if (baltaVarmi)
             {
                 Invoke("EtkilesimReset", 0.25f);

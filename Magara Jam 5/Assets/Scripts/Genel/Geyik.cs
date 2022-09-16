@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class Geyik : MonoBehaviour,IEtkilesim
 {
+    private AudioSource olmeSesi;
     Animator animator;
+    bool oldumu;
 
     public void Etkiles()
     {
-        
+        Invoke("Ol", 0.3f);
     }
-
+    void Ol()
+    {
+        if (oldumu) return;
+        oldumu = true;
+        animator.Play("Geyik Ol");
+        olmeSesi.Play();
+    }
     void Start()
     {
-        animator = GetComponent<Animator>();
-    }
-
-    void Update()
-    {
-        
+        animator = transform.GetChild(0).GetComponent<Animator>();
+        olmeSesi = GetComponent<AudioSource>();
     }
 }
