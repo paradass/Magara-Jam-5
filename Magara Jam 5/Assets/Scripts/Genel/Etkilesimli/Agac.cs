@@ -21,7 +21,7 @@ public class Agac : MonoBehaviour,IEtkilesim
     {
         Dus();
     }
-    public void Etkilses()
+    public void Etkiles()
     {
         if (!Karakter.Instance.baltaVarmi || can <= 0) return;
         can--;

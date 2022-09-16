@@ -1,4 +1,4 @@
 public interface IEtkilesim
 {
-    public void Etkilses();
+    public void Etkiles();
 }

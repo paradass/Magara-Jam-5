@@ -146,7 +146,7 @@ public class Karakter : MonoBehaviour
             }
             if(hit && hit.collider.TryGetComponent<IEtkilesim>(out IEtkilesim obje))
             {
-                obje.Etkilses();
+                obje.Etkiles();
             }
             else
             {
