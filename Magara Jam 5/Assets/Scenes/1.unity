@@ -271,14 +271,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 3088420498973408892, guid: 9bee2ff08778bc5408cab2804cdfe12b, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3510956919915529760, guid: 9bee2ff08778bc5408cab2804cdfe12b, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4243530997471469254, guid: 9bee2ff08778bc5408cab2804cdfe12b, type: 3}
       propertyPath: m_TagString
       value: 3
@@ -286,10 +278,6 @@ PrefabInstance:
     - target: {fileID: 4540618864505878504, guid: 9bee2ff08778bc5408cab2804cdfe12b, type: 3}
       propertyPath: m_TagString
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908310648170077609, guid: 9bee2ff08778bc5408cab2804cdfe12b, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5028536423045688137, guid: 9bee2ff08778bc5408cab2804cdfe12b, type: 3}
       propertyPath: m_Name
@@ -338,10 +326,6 @@ PrefabInstance:
     - target: {fileID: 5028536423045688151, guid: 9bee2ff08778bc5408cab2804cdfe12b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7295051177237009448, guid: 9bee2ff08778bc5408cab2804cdfe12b, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
