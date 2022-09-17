@@ -31,6 +31,7 @@ public class Gorev1 : GorevSistemi
             }
             if (!tekrarla) return;
             Invoke("Diyalog", 1);
+            Invoke("BaltaBulamama", 35+15);
             tekrarla = false;
 
         }
@@ -62,5 +63,13 @@ public class Gorev1 : GorevSistemi
             Invoke("Diyalog", sureler[diyalog]);
             diyalog++;
         }
+    }
+
+    void BaltaBulamama()
+    {
+        if (gorev == 1) return;
+        CancelInvoke("Diyalog");
+        diyalog = 5;
+        Invoke("Diyalog", 0.1f);
     }
 }
