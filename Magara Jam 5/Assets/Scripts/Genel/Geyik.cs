@@ -8,6 +8,11 @@ public class Geyik : MonoBehaviour,IEtkilesim
     Animator animator;
     bool oldumu;
 
+    void Start()
+    {
+        animator = transform.GetChild(0).GetComponent<Animator>();
+        olmeSesi = GetComponent<AudioSource>();
+    }
     public void Etkiles()
     {
         Invoke("Ol", 0.3f);
@@ -18,10 +23,6 @@ public class Geyik : MonoBehaviour,IEtkilesim
         oldumu = true;
         animator.Play("Geyik Ol");
         olmeSesi.Play();
-    }
-    void Start()
-    {
-        animator = transform.GetChild(0).GetComponent<Animator>();
-        olmeSesi = GetComponent<AudioSource>();
+        Destroy(this, 2);
     }
 }
