@@ -55,29 +55,29 @@ public class RabbitController : MonoBehaviour
      }
         if (canChangespeedandrot && !Rp.innit)
         {
-            actualRot = rotations[Random.Range(0, rotations.Length-1)];
-            actualspeed = speeds[Random.Range(0, speeds.Length-1)];
-            if (temproraryvector.x >= Cantpassvector1.x)
-            {
-                temproraryvector = new Vector3(transform.position.x - 2, transform.position.y + actualRot.y, transform.position.z);
-            }
-            else if (temproraryvector.y >= Cantpassvector1.y)
-            {
-                temproraryvector = new Vector3(transform.position.x + actualRot.x, transform.position.y - 2, transform.position.z);
-            }
-            else if (temproraryvector.x <= Cantpassvector2.x)
-            {
-                temproraryvector = new Vector3(transform.position.x + 2, transform.position.y + actualRot.y, transform.position.z);
-            }
-            else if (temproraryvector.y <= Cantpassvector2.y)
-            {
-                temproraryvector = new Vector3(transform.position.x + actualRot.x, transform.position.y + 2, transform.position.z);
-            }
-            else if (temproraryvector.x<=Cantpassvector1.x&& temproraryvector.y<= Cantpassvector1.y&&temproraryvector.x>=Cantpassvector2.x&&temproraryvector.y>= Cantpassvector2.y)
-            {
-                temproraryvector = new Vector3(transform.position.x + actualRot.x, transform.position.y + actualRot.y, transform.position.z);
-            }
-            canChangespeedandrot = false;
+       actualRot = rotations[Random.Range(0, rotations.Length-1)];
+       actualspeed = speeds[Random.Range(0, speeds.Length-1)];
+       if (temproraryvector.x >= Cantpassvector1.x)
+       {
+           temproraryvector = new Vector3(transform.position.x - 2, transform.position.y + actualRot.y, transform.position.z);
+       }
+       else if (temproraryvector.y >= Cantpassvector1.y)
+       {
+           temproraryvector = new Vector3(transform.position.x + actualRot.x, transform.position.y - 2, transform.position.z);
+       }
+       else if (temproraryvector.x <= Cantpassvector2.x)
+       {
+           temproraryvector = new Vector3(transform.position.x + 2, transform.position.y + actualRot.y, transform.position.z);
+       }
+       else if (temproraryvector.y <= Cantpassvector2.y)
+       {
+           temproraryvector = new Vector3(transform.position.x + actualRot.x, transform.position.y + 2, transform.position.z);
+       }
+       else if (temproraryvector.x<=Cantpassvector1.x&& temproraryvector.y<= Cantpassvector1.y&&temproraryvector.x>=Cantpassvector2.x&&temproraryvector.y>= Cantpassvector2.y)
+       {
+           temproraryvector = new Vector3(transform.position.x + actualRot.x, transform.position.y + actualRot.y, transform.position.z);
+       }
+       canChangespeedandrot = false;
         }
 
         transform.position = Vector3.MoveTowards(transform.position,temproraryvector, actualspeed * Time.deltaTime);
@@ -118,7 +118,10 @@ public class RabbitController : MonoBehaviour
         }
         else if (actualRot.x == 0 && actualRot.y == 0)
         {
-            StartCoroutine(waiting());
+            if (transform.position.x <= temproraryvector.x && transform.position.y >= temproraryvector.y)
+            {
+                StartCoroutine(waiting());
+            }
         }
 
     }
@@ -185,5 +188,18 @@ public class RabbitController : MonoBehaviour
             anim.SetBool("iswalks", true);
         }
 
+    }
+
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        actualRot = rotations[Random.Range(0, rotations.Length - 1)];
+        actualspeed = speeds[Random.Range(0, speeds.Length - 1)];
+        temproraryvector = new Vector3(transform.position.x + actualRot.x, transform.position.y + actualRot.y, transform.position.z);
+    }
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        actualRot = rotations[Random.Range(0, rotations.Length - 1)];
+        actualspeed = speeds[Random.Range(0, speeds.Length - 1)];
+        temproraryvector = new Vector3(transform.position.x + actualRot.x, transform.position.y + actualRot.y, transform.position.z);
     }
 }
