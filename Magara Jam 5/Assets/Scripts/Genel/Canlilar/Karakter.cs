@@ -12,7 +12,7 @@ public class Karakter : MonoBehaviour
     public float hareketHizi;
 
     [System.NonSerialized] public bool vurma;
-    [System.NonSerialized] public int odunSayisi;
+    [System.NonSerialized] public int odunSayisi,geyikSayisi;
     
     private Text odunSayisiText;
     private bool hareket;
