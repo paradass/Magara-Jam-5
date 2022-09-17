@@ -8,11 +8,12 @@ public class GorevSistemi : MonoBehaviour
     [TextArea(3,5)]
     public string[] yazilar;
     public AudioClip[] sesler;
+    public float[] sureler;
     [System.NonSerialized] public AudioSource ses;
     [System.NonSerialized] public Text yazi;
     [System.NonSerialized] public Karakter karakter;
-    [System.NonSerialized] public int gorev;
-    [System.NonSerialized] public bool yaziyiBastir = true;
+    [System.NonSerialized] public int gorev,diyalog;
+    [System.NonSerialized] public bool tekrarla = true;
     public void Start()
     {
         yazi = GameObject.Find("Gorev Yazisi").GetComponent<Text>();
@@ -20,7 +21,7 @@ public class GorevSistemi : MonoBehaviour
         ses = GetComponent<AudioSource>();
         yazi.text = "";
     }
-    public void GoreviDegistir(int yaziNo, int sesNo,float zaman)
+    public void YaziDegistir(int yaziNo, int sesNo,float zaman)
     {
         StartCoroutine(Gorev(yaziNo,sesNo,zaman));
     }
@@ -33,10 +34,9 @@ public class GorevSistemi : MonoBehaviour
         ses.clip = sesler[sesNo];
         ses.Play();
     }
-    public void GorevKapat(bool gorev,bool yaziyiBastiriAc=false,bool konusma=false)
+    public void YaziKapat(bool gorev,bool konusma=false)
     {
         if (gorev) yazi.text = "";
-        if (yaziyiBastiriAc) yaziyiBastir = true;
         if (konusma) ses.Stop();
     }
 }
