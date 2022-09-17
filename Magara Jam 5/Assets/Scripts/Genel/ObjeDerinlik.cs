@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjeDerinlik : MonoBehaviour
 {
+    public float y;
     Karakter karakter;
     void Start()
     {
@@ -12,7 +13,7 @@ public class ObjeDerinlik : MonoBehaviour
 
     void Update()
     {
-        if(karakter.transform.position.y-0.60f > transform.position.y)
+        if(karakter.transform.position.y-0.60f+y > transform.position.y)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, -3);
         }
