@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Gorev3 : GorevSistemi
 {
     [Space(5)]
-    [SerializeField] Vector3 hedef;
+    [SerializeField] private GameObject geyik;
 
     public void Start()
     {
@@ -24,8 +24,8 @@ public class Gorev3 : GorevSistemi
     {
         if (gorev == 0)
         {
-            float mesafe = Vector3.Distance(karakter.transform.position, hedef);
-            if (mesafe < 3)
+            float mesafe = Vector3.Distance(karakter.transform.position, geyik.transform.position);
+            if (mesafe < 5)
             {
                 tekrarla = true;
                 gorev++;
@@ -41,23 +41,26 @@ public class Gorev3 : GorevSistemi
             {
                 tekrarla = true;
                 gorev++;
-                Perde.Instance.Karart();
-                Invoke("SonrakiSahne", 2);
                 return;
             }
             if (!tekrarla) return;
             CancelInvoke("Diyalog");
-            diyalog = 6;
+            diyalog = 3;
             Invoke("Diyalog", 0.1f);
+            Invoke("GeyikOldurmeme", 9);
             tekrarla = false;
         }
     }
 
-    void AgacKesememe()
+    void GeyikOldurmeme()
     {
-        if (gorev > 0) return;
+        if (gorev > 1) return;
         CancelInvoke("Diyalog");
-        diyalog = 4;
+        diyalog = 6;
         Invoke("Diyalog", 0.1f);
+    }
+    IEnumerator JumpScare()
+    {
+        yield return new WaitForSeconds(1);
     }
 }
