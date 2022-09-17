@@ -38,7 +38,7 @@ public class Gorev1 : GorevSistemi
         if(gorev == 1)
         {
             float mesafe = Vector3.Distance(karakter.transform.position, hedef);
-            if(mesafe < 2)
+            if(mesafe < 3)
             {
                 tekrarla = true;
                 gorev++;
@@ -51,17 +51,6 @@ public class Gorev1 : GorevSistemi
             diyalog = 7;
             Invoke("Diyalog", 0.1f);
             tekrarla = false;
-        }
-    }
-
-    void Diyalog()
-    {
-        if (diyalog == yazilar.Length || yazilar[diyalog] == "") return;
-        else
-        {
-            YaziDegistir(diyalog, diyalog, 0);
-            Invoke("Diyalog", sureler[diyalog]);
-            diyalog++;
         }
     }
 
