@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Menucontroller : MonoBehaviour
 {
+    public AudioSource ad;
     public void Oyunbasla()
     {
         SceneManager.LoadScene(1);
