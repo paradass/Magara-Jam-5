@@ -39,4 +39,14 @@ public class GorevSistemi : MonoBehaviour
         if (gorev) yazi.text = "";
         if (konusma) ses.Stop();
     }
+    public void Diyalog()
+    {
+        if (diyalog == yazilar.Length || yazilar[diyalog] == "") return;
+        else
+        {
+            YaziDegistir(diyalog, diyalog, 0);
+            Invoke("Diyalog", sureler[diyalog]);
+            diyalog++;
+        }
+    }
 }
