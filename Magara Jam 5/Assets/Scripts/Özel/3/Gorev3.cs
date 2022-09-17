@@ -40,6 +40,7 @@ public class Gorev3 : GorevSistemi
         {
             if (karakter.geyikSayisi > 0)
             {
+                CancelInvoke("GeyikOldurmeme");
                 Perde.Instance.Karart();
                 Invoke("SonrakiSahne", 2);
                 tekrarla = true;
@@ -74,6 +75,6 @@ public class Gorev3 : GorevSistemi
         Camera.main.GetComponent<AnalogGlitch>().verticalJump = 0.12f;
         Camera.main.GetComponent<AnalogGlitch>().horizontalShake = 0.12f;
         Camera.main.GetComponent<AnalogGlitch>().colorDrift = 0.5f;
-
+        yield return new WaitForSeconds(1.5f);
     }
 }
