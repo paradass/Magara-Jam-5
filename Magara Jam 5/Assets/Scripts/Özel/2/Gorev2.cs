@@ -38,7 +38,7 @@ public class Gorev2 : GorevSistemi
         if (gorev == 1)
         {
             float mesafe = Vector3.Distance(karakter.transform.position, hedef);
-            if (mesafe < 3)
+            if (mesafe < 5)
             {
                 tekrarla = true;
                 gorev++;

@@ -174,7 +174,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -333,6 +333,7 @@ MonoBehaviour:
   - 3
   - 3
   geyik: {fileID: 0}
+  geyikKafasi: {fileID: 0}
 --- !u!82 &5081992357697078721
 AudioSource:
   m_ObjectHideFlags: 0
