@@ -67,14 +67,18 @@ public class Gorev3 : GorevSistemi
     }
     IEnumerator JumpScare()
     {
-        yield return new WaitForSeconds(3);
+        transform.GetChild(0).GetComponent<AudioSource>().Stop();
+        yield return new WaitForSeconds(4);
         geyik.SetActive(false);
         yield return new WaitForSeconds(2);
+        transform.GetChild(1).GetComponent<AudioSource>().Play();
         Camera.main.GetComponent<DigitalGlitch>().intensity = 0.6f;
         Camera.main.GetComponent<AnalogGlitch>().scanLineJitter = 0.63f;
         Camera.main.GetComponent<AnalogGlitch>().verticalJump = 0.12f;
         Camera.main.GetComponent<AnalogGlitch>().horizontalShake = 0.12f;
         Camera.main.GetComponent<AnalogGlitch>().colorDrift = 0.5f;
         yield return new WaitForSeconds(1.5f);
+        Perde.Instance.Karart();
+        Invoke("SonrakiSahne", 2);
     }
 }

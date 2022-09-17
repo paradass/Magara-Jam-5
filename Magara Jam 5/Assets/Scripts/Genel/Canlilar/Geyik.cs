@@ -22,6 +22,7 @@ public class Geyik : MonoBehaviour,IEtkilesim
     {
         if (oldumu) return;
         oldumu = true;
+        Karakter.Instance.geyikSayisi++;
         animator.Play("Geyik Ol");
         olmeSesi.Play();
         Destroy(this, 2);
