@@ -100,7 +100,6 @@ public class RabbitController : MonoBehaviour
         }
         else if (actualRot.x < 0 && actualRot.y < 0)
         {
-
             transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
             if (transform.position.x <= temproraryvector.x && transform.position.y <= temproraryvector.y)
             {
@@ -129,30 +128,50 @@ public class RabbitController : MonoBehaviour
     }
     void RabbitPush()
     {
-        if(Rp.solust)
-        {
-            transform.position = transform.position + new Vector3(rabbitrunSpeed * Time.deltaTime, -1* Time.deltaTime, 0);
 
-            
+        if(Rp.solust&& Rp.sagust)
+        {
+            transform.position = transform.position + new Vector3(0, 1 * Time.deltaTime, 0);
+           
+        }
+        else if(Rp.solalt&& Rp.sagalt)
+        {
+            transform.position = transform.position + new Vector3(0, -1 * Time.deltaTime, 0);
+        }
+        else if (Rp.solust && Rp.solalt)
+        {
+            transform.position = transform.position + new Vector3(-1 * Time.deltaTime, 0, 0);
+            transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+        }
+        else if (Rp.sagust && Rp.sagalt)
+        {
+            transform.position = transform.position + new Vector3(1 * Time.deltaTime, 0, 0);
+
+            transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+        }
+        else if(Rp.solust)
+        {
+            transform.position = transform.position + new Vector3(-rabbitrunSpeed * Time.deltaTime, 1* Time.deltaTime, 0);
+            transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+
         }
         else
         if (Rp.sagust)
         {
-            transform.position = transform.position + new Vector3(-rabbitrunSpeed * Time.deltaTime, -1* Time.deltaTime, 0);
-        
-
+            transform.position = transform.position + new Vector3(rabbitrunSpeed * Time.deltaTime, 1* Time.deltaTime, 0);
+            transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
         }
         else
         if (Rp.sagalt)
         {
-            transform.position = transform.position + new Vector3(-rabbitrunSpeed * Time.deltaTime,1 * Time.deltaTime, 0);
-            
+            transform.position = transform.position + new Vector3(rabbitrunSpeed * Time.deltaTime,-1 * Time.deltaTime, 0);
+            transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
         }
         else
         if (Rp.solalt)
         {
-            transform.position = transform.position + new Vector3(rabbitrunSpeed * Time.deltaTime, -1 * Time.deltaTime, 0);
-           
+            transform.position = transform.position + new Vector3(-rabbitrunSpeed * Time.deltaTime, -1 * Time.deltaTime, 0);
+            transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
         }
 
     }

@@ -17,17 +17,17 @@ public class RabbitPush : MonoBehaviour
             solust = true;
            innit =true;
 }
-        if (collider.tag == "2")
+        else if (collider.tag == "2")
         {
             sagust = true;
             innit = true;
         }
-        if (collider.tag == "3")
+       else if (collider.tag == "3")
         {
             solalt = true;
             innit = true;
         }
-        if (collider.tag == "4")
+        else if (collider.tag == "4")
         {
             sagalt = true;
             innit = true;
