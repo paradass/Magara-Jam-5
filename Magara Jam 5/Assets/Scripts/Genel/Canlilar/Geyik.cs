@@ -15,6 +15,7 @@ public class Geyik : MonoBehaviour,IEtkilesim
     }
     public void Etkiles()
     {
+        if (!Karakter.Instance.baltaVarmi) return;
         Invoke("Ol", 0.3f);
     }
     void Ol()
