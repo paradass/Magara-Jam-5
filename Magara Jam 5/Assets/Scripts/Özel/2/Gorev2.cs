@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Gorev2 : GorevSistemi
 {
-    [SerializeField] private GameObject geyik;
+    [Space(5)]
+    [SerializeField] Vector3 hedef;
+
     public void Start()
     {
         base.Start();
@@ -20,38 +22,26 @@ public class Gorev2 : GorevSistemi
         {
             if(karakter.odunSayisi >= 4)
             {
-                GorevKapat(true, true);
                 gorev++;
                 return;
             }
-            if (!yaziyiBastir) return;
-            GoreviDegistir(0, 0, 2);
-            yaziyiBastir = false;
         }
         if (gorev == 1)
         {
-            if (karakter.odunSayisi >= 4)
+            float mesafe = Vector3.Distance(karakter.transform.position, hedef);
+            if (mesafe < 2)
             {
-                GorevKapat(true, true);
+                tekrarla = true;
                 gorev++;
-                return;
-            }
-            if (!yaziyiBastir) return;
-            GoreviDegistir(0, 0, 2);
-            yaziyiBastir = false;
-        }
-        if (gorev == 2)
-        {
-            if (karakter.geyikSayisi == 1)
-            {
-                GorevKapat(true, true);
                 Perde.Instance.Karart();
-                gorev++;
+                Invoke("SonrakiSahne", 2);
                 return;
             }
-            if (!yaziyiBastir) return;
-            GoreviDegistir(0, 0, 2);
-            yaziyiBastir = false;
+            if (!tekrarla) return;
+            CancelInvoke("Diyalog");
+            diyalog = 7;
+            Invoke("Diyalog", 0.1f);
+            tekrarla = false;
         }
     }
 }

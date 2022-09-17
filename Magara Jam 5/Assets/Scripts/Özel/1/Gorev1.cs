@@ -15,40 +15,52 @@ public class Gorev1 : GorevSistemi
     {
         GorevKontrol();
     }
-
+    void SonrakiSahne()
+    {
+        SceneManager.LoadScene(2);
+    }
     void GorevKontrol()
     {
         if(gorev == 0)
         {
             if (karakter.baltaVarmi)
             {
-                GorevKapat(true, true);
+                tekrarla = true;
                 gorev++;
                 return;
             }
-            if (!yaziyiBastir) return;
-            GoreviDegistir(0, 0, 2);
-            yaziyiBastir = false;
+            if (!tekrarla) return;
+            Invoke("Diyalog", 1);
+            tekrarla = false;
+
         }
         if(gorev == 1)
         {
             float mesafe = Vector3.Distance(karakter.transform.position, hedef);
             if(mesafe < 2)
             {
-                GorevKapat(true, true);
+                tekrarla = true;
                 gorev++;
                 Perde.Instance.Karart();
                 Invoke("SonrakiSahne", 2);
                 return;
             }
-            if (!yaziyiBastir) return;
-            GoreviDegistir(1, 1, 1);
-            yaziyiBastir = false;
+            if (!tekrarla) return;
+            CancelInvoke("Diyalog");
+            diyalog = 7;
+            Invoke("Diyalog", 0.1f);
+            tekrarla = false;
         }
     }
 
-    void SonrakiSahne()
+    void Diyalog()
     {
-        SceneManager.LoadScene(2);
+        if (diyalog == yazilar.Length || yazilar[diyalog] == "") return;
+        else
+        {
+            YaziDegistir(diyalog, diyalog, 0);
+            Invoke("Diyalog", sureler[diyalog]);
+            diyalog++;
+        }
     }
 }
