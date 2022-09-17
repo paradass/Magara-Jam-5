@@ -25,6 +25,7 @@ public class RabbitController : MonoBehaviour
     public Animator anim;
     void Start()
     {
+        anim = GetComponent<Animator>();
         actualRot = rotations[Random.Range(0, rotations.Length - 1)];
         actualspeed = speeds[Random.Range(0, speeds.Length - 1)];
         temproraryvector = new Vector3(transform.position.x + actualRot.x, transform.position.y + actualRot.y, transform.position.z);
