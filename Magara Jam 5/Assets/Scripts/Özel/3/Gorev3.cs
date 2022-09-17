@@ -7,7 +7,7 @@ using Kino;
 public class Gorev3 : GorevSistemi
 {
     [Space(5)]
-    [SerializeField] private GameObject geyik;
+    [SerializeField] private GameObject geyik,geyikKafasi;
 
     public void Start()
     {
@@ -71,6 +71,7 @@ public class Gorev3 : GorevSistemi
         yield return new WaitForSeconds(4);
         geyik.SetActive(false);
         yield return new WaitForSeconds(2);
+        geyikKafasi.SetActive(true);
         transform.GetChild(1).GetComponent<AudioSource>().Play();
         Camera.main.GetComponent<DigitalGlitch>().intensity = 0.6f;
         Camera.main.GetComponent<AnalogGlitch>().scanLineJitter = 0.63f;
