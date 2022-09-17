@@ -21,8 +21,8 @@ public class RabbitController : MonoBehaviour
     public Vector2 Cantpassvector2;
 
     public GameObject player;
-    
-    
+
+    public Animator anim;
     void Start()
     {
         actualRot = rotations[Random.Range(0, rotations.Length - 1)];
@@ -45,6 +45,7 @@ public class RabbitController : MonoBehaviour
 
     void Randomtime()
     {
+
         if (Rp.innit)
         {
             actualRot = rotations[Random.Range(0, rotations.Length - 1)];
@@ -79,6 +80,7 @@ public class RabbitController : MonoBehaviour
         }
 
         transform.position = Vector3.MoveTowards(transform.position,temproraryvector, actualspeed * Time.deltaTime);
+        anim.SetBool("iswalks", true);
 
         if(actualRot.x>0&& actualRot.y > 0)
         {
@@ -94,7 +96,6 @@ public class RabbitController : MonoBehaviour
             transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
             if (transform.position.x >= temproraryvector.x && transform.position.y <= temproraryvector.y)
             {
-
                 StartCoroutine(waiting());
             }
         }
@@ -118,9 +119,11 @@ public class RabbitController : MonoBehaviour
         {
             StartCoroutine(waiting());
         }
+
     }
     IEnumerator waiting()
     {
+        anim.SetBool("iswalks", false);
         dontstartrandomtime = true;
         yield return new WaitForSeconds(times[Random.Range(0, times.Length - 1)]);
         dontstartrandomtime = false;
@@ -132,46 +135,53 @@ public class RabbitController : MonoBehaviour
         if(Rp.solust&& Rp.sagust)
         {
             transform.position = transform.position + new Vector3(0, 1 * Time.deltaTime, 0);
-           
+            anim.SetBool("iswalks", true);
+
         }
         else if(Rp.solalt&& Rp.sagalt)
         {
             transform.position = transform.position + new Vector3(0, -1 * Time.deltaTime, 0);
+            anim.SetBool("iswalks", true);
         }
         else if (Rp.solust && Rp.solalt)
         {
             transform.position = transform.position + new Vector3(-1 * Time.deltaTime, 0, 0);
             transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+            anim.SetBool("iswalks", true);
         }
         else if (Rp.sagust && Rp.sagalt)
         {
             transform.position = transform.position + new Vector3(1 * Time.deltaTime, 0, 0);
 
             transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+            anim.SetBool("iswalks", true);
         }
         else if(Rp.solust)
         {
             transform.position = transform.position + new Vector3(-rabbitrunSpeed * Time.deltaTime, 1* Time.deltaTime, 0);
             transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
-
+            anim.SetBool("iswalks", true);
         }
         else
         if (Rp.sagust)
         {
             transform.position = transform.position + new Vector3(rabbitrunSpeed * Time.deltaTime, 1* Time.deltaTime, 0);
             transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+            anim.SetBool("iswalks", true);
         }
         else
         if (Rp.sagalt)
         {
             transform.position = transform.position + new Vector3(rabbitrunSpeed * Time.deltaTime,-1 * Time.deltaTime, 0);
             transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+            anim.SetBool("iswalks", true);
         }
         else
         if (Rp.solalt)
         {
             transform.position = transform.position + new Vector3(-rabbitrunSpeed * Time.deltaTime, -1 * Time.deltaTime, 0);
             transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+            anim.SetBool("iswalks", true);
         }
 
     }
