@@ -44,7 +44,8 @@ public class Agac : MonoBehaviour,IEtkilesim
     void OdunaDonus()
     {
         GameObject cOdun = Instantiate(odun, transform.GetChild(4).transform.position, transform.rotation);
-        if (!sagami) cOdun.transform.localScale = new Vector3(-10, 10, 10);
+        if (!sagami) cOdun.transform.localScale = new Vector3(-1*transform.localScale.x * 10, transform.localScale.y * 10, transform.localScale.z * 10);
+        else cOdun.transform.localScale = new Vector3(transform.localScale.x*10, transform.localScale.y * 10, transform.localScale.z * 10);
         Destroy(gameObject);
     }
 

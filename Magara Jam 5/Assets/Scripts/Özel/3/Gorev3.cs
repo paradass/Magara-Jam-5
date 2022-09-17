@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Kino;
 
 public class Gorev3 : GorevSistemi
 {
@@ -39,6 +40,8 @@ public class Gorev3 : GorevSistemi
         {
             if (karakter.geyikSayisi > 0)
             {
+                Perde.Instance.Karart();
+                Invoke("SonrakiSahne", 2);
                 tekrarla = true;
                 gorev++;
                 return;
@@ -55,12 +58,22 @@ public class Gorev3 : GorevSistemi
     void GeyikOldurmeme()
     {
         if (gorev > 1) return;
+        karakter.baltaVarmi = false;
         CancelInvoke("Diyalog");
         diyalog = 6;
         Invoke("Diyalog", 0.1f);
+        StartCoroutine(JumpScare());
     }
     IEnumerator JumpScare()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
+        geyik.SetActive(false);
+        yield return new WaitForSeconds(2);
+        Camera.main.GetComponent<DigitalGlitch>().intensity = 0.6f;
+        Camera.main.GetComponent<AnalogGlitch>().scanLineJitter = 0.63f;
+        Camera.main.GetComponent<AnalogGlitch>().verticalJump = 0.12f;
+        Camera.main.GetComponent<AnalogGlitch>().horizontalShake = 0.12f;
+        Camera.main.GetComponent<AnalogGlitch>().colorDrift = 0.5f;
+
     }
 }

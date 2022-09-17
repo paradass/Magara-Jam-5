@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6554937795345213502
 MonoBehaviour:
@@ -46,14 +46,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yazilar:
-  - "G\xFCzel bir g\xFCn de\u011Fil mi?"
-  - "Art\u0131k baltan da oldu\u011Funa g\xF6re tam bir oduncu oldun."
-  - "Neden sana d\xFC\u015Feni yap\u0131p 4 odun toplam\u0131yorsun? \u0130lerde
-    a\u011Fa\xE7lar olacakt\u0131."
+  - "Odun toplamak i\xE7in ne kadar da g\xFCzel bir g\xFCn \xF6\u011Fle de\u011Fil
+    mi?"
+  - "Art\u0131k bir baltaya da sahip oldu\u011Funuza g\xF6re gidip biraz odun toplaya
+    bilirsiniz."
+  - "O halde hadi gidip biraz odun toplayal\u0131m."
+  - "\u0130lerde a\u011Fa\xE7lar olacakt\u0131."
   - 
   - "Birka\xE7 a\u011Fa\xE7 kesmek bu kadar zor olamaz. \xC7abuk ol!"
   - 
-  - "Harika bir i\u015F ba\u015Fard\u0131n. Hadi hava kararmadan kul\xFCbeye d\xF6n\xFCn"
+  - "Harika bir i\u015F \xE7\u0131kard\u0131n\u0131z. Hadi hava kararmadan kul\xFCbeye
+    d\xF6n\xFCn."
   sesler:
   - {fileID: 0}
   - {fileID: 0}
@@ -62,14 +65,16 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   sureler:
+  - 4
+  - 4
+  - 2
+  - 2
+  - 0
   - 3
-  - 4
-  - 5
   - 0
-  - 4
-  - 4
-  - 0
+  - 6
   hedef: {x: -7, y: 1.5, z: -2}
 --- !u!82 &6554937795345213503
 AudioSource:

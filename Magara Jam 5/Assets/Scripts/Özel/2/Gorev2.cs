@@ -48,7 +48,7 @@ public class Gorev2 : GorevSistemi
             }
             if (!tekrarla) return;
             CancelInvoke("Diyalog");
-            diyalog = 6;
+            diyalog = 7;
             Invoke("Diyalog", 0.1f);
             tekrarla = false;
         }
@@ -58,7 +58,7 @@ public class Gorev2 : GorevSistemi
     {
         if (gorev > 0) return;
         CancelInvoke("Diyalog");
-        diyalog = 4;
+        diyalog = 5;
         Invoke("Diyalog", 0.1f);
     }
 }

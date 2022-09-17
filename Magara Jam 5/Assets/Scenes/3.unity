@@ -1047,15 +1047,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yazilar:
-  - "Yine yeni bir sabaha uyand\u0131n. Ne kadar da muhte\u015Fem."
-  - "\u015Eimdi a\u011Fa\xE7 kesmeye git! L\xFCtfen"
+  - "Yine yeni bir sabaha uyand\u0131k. Ne kadar da muhte\u015Fem \xF6yle de\u011Fil
+    mi?"
+  - "\u015E\u0130MD\u0130 A\u011EA\xC7 KESMEYE G\u0130D\u0130N! Yani hadi biraz odun
+    getirin. "
   - 
-  - "Olamaz ac\u0131 i\xE7inde yaral\u0131 bir geyik!"
+  - "Olamaz ac\u0131 i\xE7inde yaral\u0131 bir geyik! Ac\u0131s\u0131na son verelim,\xD6LD\xDCR
+    ONU!"
   - "Ac\u0131s\u0131na son ver, \xF6ld\xFCr onu!"
   - 
-  - "Bir geyi\u011Fi \xF6ld\xFCrmek bizim i\xE7in bu kadar m\u0131 zor? Her neyse
-    ben hallederim."
+  - "Bir geyi\u011Fi \xF6ld\xFCrmek bizim i\xE7in bu kadar m\u0131 zor? "
+  - Her neyse ben hallederim.
   sesler:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1070,7 +1074,8 @@ MonoBehaviour:
   - 3
   - 3
   - 0
-  - 6
+  - 3
+  - 3
   geyik: {fileID: 1590277043}
 --- !u!1001 &1590277042
 PrefabInstance:
