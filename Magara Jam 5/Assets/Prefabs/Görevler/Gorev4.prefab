@@ -58,17 +58,17 @@ MonoBehaviour:
   - "Ov! Tanr\u0131ya \u015F\xFCk\xFCr sonunda buldun \u015Fu baltay\u0131."
   - "Hadi geri d\xF6n\xFCp biraz dinlenelim."
   sesler:
+  - {fileID: 8300000, guid: d243fa4d18d9b4440a3a64516139802f, type: 3}
+  - {fileID: 8300000, guid: 4cc06c86ac6312c4e82dcbee2940d765, type: 3}
+  - {fileID: 8300000, guid: 9dc66fe48f2e1e14388c61e8666e8868, type: 3}
+  - {fileID: 8300000, guid: 900ef6ee40658d54abafbf3bab2ef844, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: ec6fbe37e8d407d46b76ca66364e1f8d, type: 3}
+  - {fileID: 8300000, guid: a0ae914cbaeaa2443847c8e7e62b79fd, type: 3}
   sureler:
-  - 4
+  - 3.2
   - 4.5
-  - 5
+  - 4
   - 4
   - 0
   - 3.5

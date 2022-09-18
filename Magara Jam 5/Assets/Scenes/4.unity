@@ -151219,11 +151219,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4602983343480132402, guid: f08d8c3802d58ef428f84e6164c133c4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -12.9
       objectReference: {fileID: 0}
     - target: {fileID: 4602983343480132402, guid: f08d8c3802d58ef428f84e6164c133c4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.48
+      value: 8.22
       objectReference: {fileID: 0}
     - target: {fileID: 4602983343480132402, guid: f08d8c3802d58ef428f84e6164c133c4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -151260,6 +151260,10 @@ PrefabInstance:
     - target: {fileID: 4602983343480132404, guid: f08d8c3802d58ef428f84e6164c133c4, type: 3}
       propertyPath: hedef.x
       value: -13.62152
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602983343480132404, guid: f08d8c3802d58ef428f84e6164c133c4, type: 3}
+      propertyPath: hedef.y
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4602983343480132404, guid: f08d8c3802d58ef428f84e6164c133c4, type: 3}
       propertyPath: geyikKafasi
