@@ -6,7 +6,7 @@ public class Menucontroller : MonoBehaviour
 {
     public AudioSource ad;
     public AudioSource music;
-    public AudioSource music2;
+    public AudioSource music2,bozulmaSesi;
 
     public bool coruntineController=false;
 
@@ -31,8 +31,10 @@ public class Menucontroller : MonoBehaviour
     IEnumerator TwentySeconds()
     {
 
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(18f);
         music.Stop();
+        bozulmaSesi.Play();
+        yield return new WaitForSeconds(1f);
         music2.Play();
     }
 }
