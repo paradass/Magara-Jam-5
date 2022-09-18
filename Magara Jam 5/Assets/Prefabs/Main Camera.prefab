@@ -222,7 +222,7 @@ VideoPlayer:
   m_RenderMode: 3
   m_AspectRatio: 2
   m_DataSource: 0
-  m_PlaybackSpeed: 5.4
+  m_PlaybackSpeed: 10
   m_AudioOutputMode: 0
   m_TargetAudioSources:
   - {fileID: 0}
