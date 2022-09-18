@@ -134,9 +134,9 @@ MonoBehaviour:
   Rp: {fileID: 6027865089075260383}
   rabbitrunSpeed: 2
   Cantpassvector1: {x: 100, y: 100}
-  Cantpassvector2: {x: 100, y: 100}
+  Cantpassvector2: {x: -100, y: -100}
   player: {fileID: 0}
-  anim: {fileID: 0}
+  anim: {fileID: 29159394917509262}
 --- !u!114 &5314803575110815264
 MonoBehaviour:
   m_ObjectHideFlags: 0
