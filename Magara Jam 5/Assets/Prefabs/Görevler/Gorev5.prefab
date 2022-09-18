@@ -87,23 +87,23 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c6decd5fc1212a1449c9aca4a1cf7b8e, type: 3}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 8300000, guid: f4a4fb1417a559a43b94d67637508c28, type: 3}
   - {fileID: 8300000, guid: a5468c63de3de9340b4691a9460115b3, type: 3}
-  - {fileID: 0}
   sureler:
   - 3
   - 2
+  - 6
   - 5
-  - 0
   - 5
   - 3
-  - 2
+  - 1
   - 4
-  - 8
-  - 5
-  - 5
   - 7
-  - 3
-  - 8
+  - 6
+  - 5
+  - 2
+  - 7
+  - 10
   - 0
   - 4
   - 3
