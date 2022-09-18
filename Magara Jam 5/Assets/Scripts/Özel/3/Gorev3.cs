@@ -21,6 +21,10 @@ public class Gorev3 : GorevSistemi
     {
         SceneManager.LoadScene(4);
     }
+    void BuSahne()
+    {
+        SceneManager.LoadScene(3);
+    }
     void GorevKontrol()
     {
         if (gorev == 0)
@@ -80,6 +84,6 @@ public class Gorev3 : GorevSistemi
         Camera.main.GetComponent<AnalogGlitch>().colorDrift = 0.5f;
         yield return new WaitForSeconds(1.5f);
         Perde.Instance.Karart();
-        Invoke("SonrakiSahne", 2);
+        Invoke("BuSahne", 2);
     }
 }
