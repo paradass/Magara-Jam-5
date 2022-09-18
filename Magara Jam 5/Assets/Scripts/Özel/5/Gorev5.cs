@@ -44,8 +44,6 @@ public class Gorev5 : GorevSistemi
             {
                 tekrarla = true;
                 gorev++;
-                diyalog = 15;
-                Invoke("Diyalog", 0.1f);
                 StartCoroutine(Son());
                 return;
             }
@@ -69,5 +67,20 @@ public class Gorev5 : GorevSistemi
         hayaletler[1].SetActive(false);
         yield return new WaitForSeconds(10);
 
+        transform.GetChild(2).GetComponent<AudioSource>().Play();
+        Camera.main.GetComponent<DigitalGlitch>().intensity = 0.2f;
+        Camera.main.GetComponent<AnalogGlitch>().scanLineJitter = 0.23f;
+        Camera.main.GetComponent<AnalogGlitch>().verticalJump = 0.06f;
+        Camera.main.GetComponent<AnalogGlitch>().horizontalShake = 0.06f;
+        Camera.main.GetComponent<AnalogGlitch>().colorDrift = 0.2f;
+        yield return new WaitForSeconds(2);
+        //ekran temiz
+        transform.GetChild(0).GetComponent<AudioSource>().Play();
+        Camera.main.GetComponent<DigitalGlitch>().intensity = 0f;
+        Camera.main.GetComponent<AnalogGlitch>().scanLineJitter = 0f;
+        Camera.main.GetComponent<AnalogGlitch>().verticalJump = 0f;
+        Camera.main.GetComponent<AnalogGlitch>().horizontalShake = 0f;
+        Camera.main.GetComponent<AnalogGlitch>().colorDrift = 0f;
+        yield return new WaitForSeconds(2);
     }
 }

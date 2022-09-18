@@ -14,11 +14,11 @@ public class GolgeTakip : MonoBehaviour
         }
         else if(mesafe > 8)
         {
-            hiz = 4;
+            hiz = 5;
         }
         else if (mesafe > 5)
         {
-            hiz = 3.5f;
+            hiz = 4f;
         }
         else if(mesafe > 3)
         {
@@ -28,7 +28,7 @@ public class GolgeTakip : MonoBehaviour
         {
             hiz = 0;
         }
-        else
+        else if(mesafe <= 1)
         {
             GameObject.Find("Gorev5").GetComponent<Gorev5>().golgelendi = true;
         }
