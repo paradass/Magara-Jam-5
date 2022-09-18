@@ -74,6 +74,7 @@ public class Gorev4 : GorevSistemi
         Camera.main.GetComponent<AnalogGlitch>().colorDrift = 0.2f;
         yield return new WaitForSeconds(2);
         //ekran temiz
+        transform.GetChild(0).GetComponent<AudioSource>().Play();
         GameObject.Find("Odun Toplama").GetComponent<Image>().sprite = kotuUi;
         Camera.main.GetComponent<DigitalGlitch>().intensity = 0f;
         Camera.main.GetComponent<AnalogGlitch>().scanLineJitter = 0f;
@@ -82,6 +83,7 @@ public class Gorev4 : GorevSistemi
         Camera.main.GetComponent<AnalogGlitch>().colorDrift = 0f;
         yield return new WaitForSeconds(2);
         //glitch
+        transform.GetChild(0).GetComponent<AudioSource>().Pause();
         GameObject[] agacalar = GameObject.FindGameObjectsWithTag("Agac");
         foreach(GameObject obje in agacalar)
         {
@@ -96,12 +98,14 @@ public class Gorev4 : GorevSistemi
         Camera.main.GetComponent<AnalogGlitch>().colorDrift = 0.2f;
         yield return new WaitForSeconds(2);
         //ekran temiz
+        transform.GetChild(0).GetComponent<AudioSource>().Play();
         Camera.main.GetComponent<DigitalGlitch>().intensity = 0f;
         Camera.main.GetComponent<AnalogGlitch>().scanLineJitter = 0f;
         Camera.main.GetComponent<AnalogGlitch>().verticalJump = 0f;
         Camera.main.GetComponent<AnalogGlitch>().horizontalShake = 0f;
         Camera.main.GetComponent<AnalogGlitch>().colorDrift = 0f;
         yield return new WaitForSeconds(10);
+        transform.GetChild(0).GetComponent<AudioSource>().Stop();
         Destroy(Instantiate(yaratik, new Vector3(karakter.transform.position.x - 3, karakter.transform.position.y, -6), Quaternion.identity), 2);
         yield return new WaitForSeconds(2);
         transform.GetChild(1).GetComponent<AudioSource>().Play();
