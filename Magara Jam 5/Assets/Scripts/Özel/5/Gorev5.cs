@@ -90,7 +90,7 @@ public class Gorev5 : GorevSistemi
 
         transform.GetChild(0).GetComponent<AudioSource>().Stop();
         yield return new WaitForSeconds(4);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
         geyikKafasi.SetActive(true);
         transform.GetChild(1).GetComponent<AudioSource>().Play();
         Camera.main.GetComponent<DigitalGlitch>().intensity = 0.6f;
@@ -100,5 +100,6 @@ public class Gorev5 : GorevSistemi
         Camera.main.GetComponent<AnalogGlitch>().colorDrift = 0.5f;
         yield return new WaitForSeconds(1.5f);
         Perde.Instance.Karart();
+        Application.Quit();
     }
 }
