@@ -34,7 +34,7 @@ Transform:
   - {fileID: 683328153208492668}
   - {fileID: 4602983343584366575}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4602983343480132404
 MonoBehaviour:
@@ -49,13 +49,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yazilar:
-  - "Bir \u015Eeyler kaybetme konusunda \xE7ok iyisin!"
-  - "Yani iyisiniz. Ama sorun de\u011Fil tabi telafi etti\u011Finiz s\xFCrece."
+  - "Bir \u015Feyler kaybetme konusunda \xE7ok iyisin!"
+  - "Yani, iyisiniz. Telafi etti\u011Finiz s\xFCrece bir problem yok."
   - "Sabah odun kesebilmek i\xE7in bir baltaya ihtiyac\u0131n\u0131z olacak.\r"
   - "Bu g\xFCn\xFCn i\u015Fini yar\u0131na b\u0131rakmasak iyi olur \xF6yle de\u011Fil
     mi?"
   - 
-  - "Ov tanr\u0131ya \u015F\xFCk\xFCr sonunda buldun \u015Fu baltay\u0131."
+  - "Ov! Tanr\u0131ya \u015F\xFCk\xFCr sonunda buldun \u015Fu baltay\u0131."
   - "Hadi geri d\xF6n\xFCp biraz dinlenelim."
   sesler:
   - {fileID: 0}

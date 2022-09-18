@@ -47,17 +47,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yazilar:
-  - Hey sen merhaba.
-  - "Odun toplamak i\xE7in ne kadar da g\xFCzel bir g\xFCn \xF6\u011Fre de\u011Fil
-    mi?"
-  - "Bu Oduncu Woody o da b\xF6yle d\xFC\u015F\xFCn\xFCyor ama malesef baltas\u0131n\u0131
+  - Hey, sen! Merhaba.
+  - "Odun toplamak i\xE7in ne kadar g\xFCzel bir g\xFCn \xF6yle de\u011Fil mi?"
+  - "Bu, Oduncu Woody. O da b\xF6yle d\xFC\u015F\xFCn\xFCyor, ama maalesef baltas\u0131n\u0131
     kaybetmi\u015F."
-  - "Buralarda bir yerde olsa gerek. Ona baltas\u0131n\u0131 bulmas\u0131nda yarad\u0131mc\u0131
+  - "Buralarda bir yerde olsa gerek. Ona baltas\u0131n\u0131 bulmas\u0131nda yard\u0131mc\u0131
     olabilir misin?"
   - 
-  - "Hadi ama hala bulamad\u0131n\u0131z m\u0131?"
+  - "Hadi ama! Hala bulamad\u0131n\u0131z m\u0131?"
   - 
-  - "Harika, kul\xFCbeye geri d\xF6nelim."
+  - "Harika! Kul\xFCbeye geri d\xF6nelim."
   sesler:
   - {fileID: 0}
   - {fileID: 0}
