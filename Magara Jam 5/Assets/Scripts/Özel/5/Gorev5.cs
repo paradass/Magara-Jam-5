@@ -44,13 +44,15 @@ public class Gorev5 : GorevSistemi
             {
                 tekrarla = true;
                 gorev++;
-                diyalog = 7;
+                diyalog = 15;
                 Invoke("Diyalog", 0.1f);
+                StartCoroutine(Son());
                 return;
             }
             if (!tekrarla) return;
-            CancelInvoke("Diyalog");
             Invoke("GolgeCikar", 1);
+            diyalog = 4;
+            Invoke("Diyalog", 1);
             tekrarla = false;
         }
     }
@@ -58,6 +60,14 @@ public class Gorev5 : GorevSistemi
     void GolgeCikar()
     {
         hayaletler[0].SetActive(true);
+        hayaletler[1].SetActive(true);
+    }
+
+    IEnumerator Son()
+    {
+        hayaletler[0].SetActive(false);
+        hayaletler[1].SetActive(false);
+        yield return new WaitForSeconds(10);
 
     }
 }
