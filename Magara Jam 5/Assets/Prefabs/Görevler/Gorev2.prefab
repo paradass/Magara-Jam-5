@@ -185,21 +185,21 @@ MonoBehaviour:
   - "Harika bir i\u015F \xE7\u0131kard\u0131n\u0131z. Hadi hava kararmadan kul\xFCbeye
     d\xF6nelim."
   sesler:
+  - {fileID: 8300000, guid: d0ec8155975c0514a99b36a31faddbfa, type: 3}
+  - {fileID: 8300000, guid: 65383b05188e265419ee78ec5cd830a4, type: 3}
+  - {fileID: 8300000, guid: 31c35437d99117b41a092a7ef866df83, type: 3}
+  - {fileID: 8300000, guid: c0160bcf21e43724fab96d31ed897ef0, type: 3}
   - {fileID: 0}
+  - {fileID: 8300000, guid: 02d3b8b609b934649817c8826c547caa, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 9bcc53b65955a24458acbd7fe4b6d67e, type: 3}
   sureler:
   - 4
-  - 4
-  - 2
+  - 4.5
+  - 3
   - 2
   - 0
-  - 3
+  - 7
   - 0
   - 6
   hedef: {x: 46, y: -54, z: -2}
