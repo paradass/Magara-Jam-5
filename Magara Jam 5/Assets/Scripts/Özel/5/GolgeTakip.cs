@@ -28,7 +28,7 @@ public class GolgeTakip : MonoBehaviour
         {
             hiz = 0;
         }
-        else if(mesafe <= 1)
+        else if(mesafe <= 2)
         {
             GameObject.Find("Gorev5").GetComponent<Gorev5>().golgelendi = true;
         }
