@@ -315,19 +315,19 @@ MonoBehaviour:
   - "Bir geyi\u011Fi \xF6ld\xFCrmek bu kadar zor olmamal\u0131!"
   - Her neyse! Ben hallederim.
   sesler:
+  - {fileID: 8300000, guid: 814ba8cf8b890174fb10c121723b6bec, type: 3}
+  - {fileID: 8300000, guid: 7de3211c78caf7e4f9af5c8bc1bb943d, type: 3}
   - {fileID: 0}
+  - {fileID: 8300000, guid: 50136f96fa609fc4eb137ed6b6e82ffb, type: 3}
+  - {fileID: 8300000, guid: 2cde3f627ac2acb4ebe4af6b78deb21c, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 1f637ac62bfcaf642aa92e3f8ac03f1d, type: 3}
+  - {fileID: 8300000, guid: 65c2c8ad85c6a744f913df9861b22aa5, type: 3}
   sureler:
-  - 3
-  - 3
+  - 4
+  - 4
   - 0
-  - 3
+  - 5.5
   - 3
   - 0
   - 3
