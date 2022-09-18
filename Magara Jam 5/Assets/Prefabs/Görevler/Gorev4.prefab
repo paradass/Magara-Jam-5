@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1791110951881750997
+--- !u!1 &4602983343480132400
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,87 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8078440393435284616}
-  - component: {fileID: 5122340771216771948}
+  - component: {fileID: 4602983343480132402}
+  - component: {fileID: 4602983343480132404}
+  - component: {fileID: 4602983343480132405}
   m_Layer: 0
-  m_Name: JumpScare
+  m_Name: Gorev4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8078440393435284616
+--- !u!4 &4602983343480132402
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1791110951881750997}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 4602983343480132400}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 10.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5081992357697078726}
-  m_RootOrder: -1
+  m_Children:
+  - {fileID: 2288095519657903531}
+  - {fileID: 683328153208492668}
+  - {fileID: 4602983343584366575}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &5122340771216771948
+--- !u!114 &4602983343480132404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4602983343480132400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5ce64aa2aa9234aa470194f261f623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yazilar:
+  - "Bir \u015Feyler kaybetme konusunda \xE7ok iyisin!"
+  - "Yani, iyisiniz. Telafi etti\u011Finiz s\xFCrece bir problem yok."
+  - "Sabah odun kesebilmek i\xE7in bir baltaya ihtiyac\u0131n\u0131z olacak.\r"
+  - "Bu g\xFCn\xFCn i\u015Fini yar\u0131na b\u0131rakmasak iyi olur \xF6yle de\u011Fil
+    mi?"
+  - 
+  - "Ov! Tanr\u0131ya \u015F\xFCk\xFCr sonunda buldun \u015Fu baltay\u0131."
+  - "Hadi geri d\xF6n\xFCp biraz dinlenelim."
+  sesler:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  sureler:
+  - 4
+  - 4.5
+  - 5
+  - 4
+  - 0
+  - 3.5
+  - 3
+  kotuUi: {fileID: -1690701442, guid: f5631ad54244edc49a1a4ae10b7b2424, type: 3}
+  geyik: {fileID: 1740774867394519721, guid: e81c310b800b74d4f833b9ae6836fad0, type: 3}
+  yaratik: {fileID: 9075717217068530361, guid: ca98199cbc87f4646a07dc44ad87dfe6, type: 3}
+  geyikKafasi: {fileID: 0}
+  hedef: {x: 0, y: 0, z: 0}
+--- !u!82 &4602983343480132405
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1791110951881750997}
+  m_GameObject: {fileID: 4602983343480132400}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ed8eb956be4755448b71252909af0905, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -128,7 +174,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &3260177833797733414
+--- !u!1 &4602983343584366572
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,8 +182,136 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7396945963173794655}
-  - component: {fileID: 8289131701525968870}
+  - component: {fileID: 4602983343584366575}
+  - component: {fileID: 4602983343584366574}
+  m_Layer: 0
+  m_Name: Glitch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4602983343584366575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4602983343584366572}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4602983343480132402}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &4602983343584366574
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4602983343584366572}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c99b0d13cbb3f50469e64c5bf3a000f9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &6078086664389483218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2288095519657903531}
+  - component: {fileID: 751855621821096210}
   m_Layer: 0
   m_Name: Muzik
   m_TagString: Untagged
@@ -145,32 +319,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7396945963173794655
+--- !u!4 &2288095519657903531
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3260177833797733414}
+  m_GameObject: {fileID: 6078086664389483218}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5081992357697078726}
+  m_Father: {fileID: 4602983343480132402}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &8289131701525968870
+--- !u!82 &751855621821096210
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3260177833797733414}
+  m_GameObject: {fileID: 6078086664389483218}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 88a4b93ae9cd83d429386ef665f61b3b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9c82773d313d3b24989147af54bf8a4a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -256,7 +430,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &5081992357697078724
+--- !u!1 &7042649065466474273
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -264,87 +438,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5081992357697078726}
-  - component: {fileID: 5081992357697078720}
-  - component: {fileID: 5081992357697078721}
+  - component: {fileID: 683328153208492668}
+  - component: {fileID: 4499654734235622808}
   m_Layer: 0
-  m_Name: Gorev3
+  m_Name: JumpScare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5081992357697078726
+--- !u!4 &683328153208492668
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5081992357697078724}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10.48, z: 0}
+  m_GameObject: {fileID: 7042649065466474273}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7396945963173794655}
-  - {fileID: 8078440393435284616}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_Children: []
+  m_Father: {fileID: 4602983343480132402}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5081992357697078720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5081992357697078724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc5e0c1047fae214c88b0612edc8b917, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yazilar:
-  - "Yine yeni bir sabaha uyand\u0131k. Ne kadar da muhte\u015Fem \xF6yle de\u011Fil
-    mi?"
-  - "\u015E\u0130MD\u0130 A\u011EA\xC7 KESMEYE G\u0130D\u0130N! Yani... hadi biraz
-    odun getirin. "
-  - 
-  - "Olamaz! Ac\u0131 i\xE7inde yaral\u0131 bir geyik! Ac\u0131s\u0131na son verelim."
-  - "\xD6LD\xDCR ONU!"
-  - 
-  - "Bir geyi\u011Fi \xF6ld\xFCrmek bu kadar zor olmamal\u0131!"
-  - Her neyse! Ben hallederim.
-  sesler:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  sureler:
-  - 3
-  - 3
-  - 0
-  - 3
-  - 3
-  - 0
-  - 3
-  - 3
-  geyik: {fileID: 0}
-  geyikKafasi: {fileID: 0}
---- !u!82 &5081992357697078721
+--- !u!82 &4499654734235622808
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5081992357697078724}
+  m_GameObject: {fileID: 7042649065466474273}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ed8eb956be4755448b71252909af0905, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

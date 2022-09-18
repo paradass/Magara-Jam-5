@@ -175,17 +175,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yazilar:
-  - "Odun toplamak i\xE7in ne kadar da g\xFCzel bir g\xFCn \xF6\u011Fle de\u011Fil
-    mi?"
-  - "Art\u0131k bir baltaya da sahip oldu\u011Funuza g\xF6re gidip biraz odun toplaya
-    bilirsiniz."
+  - "Odun toplamak i\xE7in ne kadar g\xFCzel bir g\xFCn, \xF6yle de\u011Fil mi?"
+  - "Art\u0131k bir baltaya da sahip oldu\u011Funuza g\xF6re gidip biraz odun toplayabilirsiniz."
   - "O halde hadi gidip biraz odun toplayal\u0131m."
-  - "\u0130lerde a\u011Fa\xE7lar olacakt\u0131."
+  - "\u0130leride a\u011Fa\xE7lar olacakt\u0131."
   - 
   - "Birka\xE7 a\u011Fa\xE7 kesmek bu kadar zor olamaz. \xC7abuk ol!"
   - 
   - "Harika bir i\u015F \xE7\u0131kard\u0131n\u0131z. Hadi hava kararmadan kul\xFCbeye
-    d\xF6n\xFCn."
+    d\xF6nelim."
   sesler:
   - {fileID: 0}
   - {fileID: 0}
