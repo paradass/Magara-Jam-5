@@ -393,7 +393,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -644,7 +644,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 391.6, y: 205.1}
+  m_AnchoredPosition: {x: 356, y: 194}
   m_SizeDelta: {x: 65.845, y: 63.143}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &889377787
@@ -1085,7 +1085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 337416198104358473, guid: 89a65639daeb5ac489fa3d5445b620f7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -71.8
+      value: -73.7
       objectReference: {fileID: 0}
     - target: {fileID: 337416198104358478, guid: 89a65639daeb5ac489fa3d5445b620f7, type: 3}
       propertyPath: m_Colors.m_NormalColor.a
@@ -1325,11 +1325,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 337416199831371351, guid: 89a65639daeb5ac489fa3d5445b620f7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 402.6
+      value: 367
       objectReference: {fileID: 0}
     - target: {fileID: 337416199831371351, guid: 89a65639daeb5ac489fa3d5445b620f7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 73.3
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 2913404950203823933, guid: 89a65639daeb5ac489fa3d5445b620f7, type: 3}
       propertyPath: m_IsActive
