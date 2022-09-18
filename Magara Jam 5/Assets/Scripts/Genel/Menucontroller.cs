@@ -13,21 +13,10 @@ public class Menucontroller : MonoBehaviour
     void Start()
     {
         music.Play();
+        StartCoroutine(TwentySeconds());
     }
 
-    void Update()
-    {
-        if (!coruntineController)
-        {
-            StartCoroutine(TwentySeconds());
-        }
-        if (coruntineController)
-        {
-            music.Pause();
-            music2.Play();
-        }
-        
-    }
+
 
     public void Oyunbasla()
     {
@@ -43,6 +32,7 @@ public class Menucontroller : MonoBehaviour
     {
 
         yield return new WaitForSeconds(20f);
-        coruntineController = true;
+        music.Stop();
+        music2.Play();
     }
 }
