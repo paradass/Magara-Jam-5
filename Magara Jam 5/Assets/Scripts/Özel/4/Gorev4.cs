@@ -76,6 +76,7 @@ public class Gorev4 : GorevSistemi
         //ekran temiz
         transform.GetChild(0).GetComponent<AudioSource>().Play();
         GameObject.Find("Odun Toplama").GetComponent<Image>().sprite = kotuUi;
+        karakter.geyikSay = true;
         Camera.main.GetComponent<DigitalGlitch>().intensity = 0f;
         Camera.main.GetComponent<AnalogGlitch>().scanLineJitter = 0f;
         Camera.main.GetComponent<AnalogGlitch>().verticalJump = 0f;

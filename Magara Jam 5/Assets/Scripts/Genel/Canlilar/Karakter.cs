@@ -11,7 +11,7 @@ public class Karakter : MonoBehaviour
     public bool baltaVarmi;
     public float hareketHizi;
 
-    [System.NonSerialized] public bool vurma;
+    [System.NonSerialized] public bool vurma,geyikSay;
     [System.NonSerialized] public int odunSayisi,geyikSayisi;
     
     private Text odunSayisiText;
@@ -168,6 +168,7 @@ public class Karakter : MonoBehaviour
 
     void OdunSay()
     {
-        odunSayisiText.text = odunSayisi.ToString();
+        if(geyikSay) odunSayisiText.text = geyikSayisi.ToString();
+        else odunSayisiText.text = odunSayisi.ToString();
     }
 }
